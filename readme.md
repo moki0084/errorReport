@@ -38,3 +38,10 @@ try {
 ```
 
 window.onerror , addEventListener 都会执行,重复注册都只会执行一次
+
+#### Source Map解析
+
+普遍线上代码都压缩了,需要解析Source Map 才可以正确的定位,
+- 可视化解析 http://sokra.github.io/source-map-visualization/
+- 官方解析库 https://github.com/mozilla/source-map
+- 它相比官方的库性能更高、具有更智能的推导功能   https://github.com/digojs/source-map-builder
